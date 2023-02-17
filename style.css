@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+img {
+  width: 100%;
+}
+
+body {
+ font-family: 'Poppins', sans-serif;
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+}
+
+button{
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 100vmax;
+  background: linear-gradient(145deg, #eec590, #c8a67a);
+  box-shadow:  8px 8px 16px #c1a075,
+               -8px -8px 16px #fbd099;
+  border: 0;
+  margin-inline: 10px;
+  transition: all .5s ease;
+}
+
+button:active{
+  border-radius: 50px;
+  background: linear-gradient(145deg, #c8a67a, #eec590);
+  box-shadow:  8px 8px 16px #c1a075,
+               -8px -8px 16px #fbd099;
+}
+
+
+
+#top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.game-container {
+  background-color: #deb887;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 1rem;
+  height: 100vh;
+}
+.playerContainer {
+  width: 200px;
+  height: 200px;
+  
+}
+
+#playerContainer,
+#computerContainer {
+  font-size: 20px;
+}
+
+.war {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.war .user,
+.war .comp {
+  display: grid;
+  gap: 10px;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border-radius: 50px;
+
+}
+
+.img-cont {
+  width: 200px;
+  height: 200px;
+  padding: 1rem;
+  background: linear-gradient(145deg, #c8a67a, #eec590);
+  box-shadow:  5px 15px 50px #bd9c73,
+               -5px -15px 50px #ffd49b;
+  border-radius: 2rem;
+}
+
+.war #result {
+  margin: 10px;
+}
+
+#modal {
+  padding: 1rem;
+  width: 30rem;
+  text-align: center;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #deb887;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 100vmax #deb887;
+}
+
+#modal > * {
+  margin-block: 10px;
+}
+
+table thead tr{
+text-align: center;
+}
+
+.main #list {
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
+  top: 20%;
+  background-color: #eec590;
+  padding: 20px;
+  border-radius: 1rem;
+  transition: transform .6s ease;
+  /* display: none; */
+  border-radius: 50px;
+background: #deb887;
+box-shadow:  20px 20px 60px #bd9c73,
+             -20px -20px 60px #ffd49b;
+  z-index: 100;
+
+}
+
+.main #list thead tr th {
+  padding: 5px 40px
+}
+
+
+.main #list tbody tr td {
+  text-align: center;
+  padding-block: 5px;
+  border-top: 1px solid brown;
+}
+
+
